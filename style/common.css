@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    padding:0;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+h2{
+    cursor: pointer;
+}
+.menu{
+    display:none;
+    position: absolute;
+    top:70%;
+    width:150px;
+    text-align: center;
+    right:0;
+    padding:10px;
+    background-color: grey;
+    border-radius: 1px solid grey;
+}
+.menu ul{
+    list-style: none;
+    padding:0;
+}
+.menu ul li{
+    margin-bottom: 5px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+}
+    h2:hover ~ .menu, .menu:hover{
+display: block;
+    }
+    .menu ul li a:hover{
+        color:white;
+    }
